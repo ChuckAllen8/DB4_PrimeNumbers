@@ -1,0 +1,13 @@
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.exe
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.deps.json
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.runtimeconfig.json
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.runtimeconfig.dev.json
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.dll
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\bin\Debug\netcoreapp3.1\PrimeNumbers.pdb
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.csprojAssemblyReference.cache
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.AssemblyInfoInputs.cache
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.AssemblyInfo.cs
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.csproj.CoreCompileInputs.cache
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.dll
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.pdb
+C:\devbuild4\DB4_PrimeNumbers\PrimeNumbers\obj\Debug\netcoreapp3.1\PrimeNumbers.genruntimeconfig.cache
