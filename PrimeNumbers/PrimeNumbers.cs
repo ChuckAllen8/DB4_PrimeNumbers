@@ -25,7 +25,7 @@ namespace PrimeNumbers
                 return primes[n - 1];
             }
 
-            int number = primes[^1]; //start at last known prime
+            int number = primes[^1] + 1; //start at last known prime. plus 1
             bool thisPrime = true; // a number is prime until proven otherwise.
 
             while(true)
@@ -36,13 +36,18 @@ namespace PrimeNumbers
                     break;
                 }
 
-                // check existing primes to see if the number is divisible by them
                 foreach(int prime in primes)
                 {
                     if(number % prime == 0)
                     {
+                        // check existing primes to see if the number is divisible by them
                         thisPrime = false;
                         break;
+                    }
+                    else if(prime*prime > number)
+                    {
+                        // if we are greater than the square root there cannot be two factors besides 1 and the number
+                        break; 
                     }
                 }
                 if(thisPrime)

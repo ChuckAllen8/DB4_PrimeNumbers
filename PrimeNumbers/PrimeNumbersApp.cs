@@ -10,8 +10,8 @@ namespace PrimeNumbers
         {
             PrimeNumbers numbers = new PrimeNumbers();
             Validator validator = new Validator();
-            Console.WriteLine();
-            Console.WriteLine();
+            Console.WriteLine("Let's locate some primes!");
+            Console.WriteLine("This application will find any n-th prime number, in order, from the first prime on.");
             string goAgain;
             do
             {
@@ -24,13 +24,14 @@ namespace PrimeNumbers
                 }
 
                 int n = int.Parse(input);
-                Console.WriteLine($"The {n}{NumberEnding(n)} prime number is {numbers.GetPrime(n)}");
+                Console.WriteLine($"\nThe {n}{NumberEnding(n)} prime number is {numbers.GetPrime(n)}\n");
 
                 while(!validator.ParseYN(input, out goAgain))
                 {
                     Console.Write("Do you want to find another prime number? (Y/N): ");
                     input = Console.ReadLine();
                 }
+                Console.WriteLine();
             } while (goAgain == "Y");
         }
 
