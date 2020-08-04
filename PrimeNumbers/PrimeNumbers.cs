@@ -18,6 +18,43 @@ namespace PrimeNumbers
             }
         }
 
+        public bool GetPrimeComponents(double number, out int prime1, out int prime2)
+        {
+            double cap = Math.Ceiling(Math.Sqrt(number));
+            int primeCount = 1;
+            while (primes[^1] <= cap)
+            {
+                GetPrime(primeCount);
+                primeCount++;
+            }
+            
+            for (int index = 0; index < primes.Count; index++)
+            {
+                if(number % primes[index] == 0)
+                {
+                    int highNumber = (int)(number / primes[index]);
+
+                    while (primes[^1] < highNumber)
+                    {
+                        GetPrime(primeCount);
+                        primeCount++;
+                    }
+
+                    if(primes.Contains(highNumber))
+                    {
+                        prime1 = primes[index];
+                        prime2 = (int)(number / primes[index]);
+                        return true;
+                    }
+
+                    break;
+                }
+            }
+            prime1 = default;
+            prime2 = default;
+            return false;
+        }
+
         public int GetPrime(int n)
         {
             if(primes.Count >= n && primes.Count > 0)

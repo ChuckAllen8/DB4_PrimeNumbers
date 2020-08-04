@@ -7,7 +7,7 @@ namespace PrimeNumbers
         static void Main(string[] args)
         {
             PrimeNumbersApp app = new PrimeNumbersApp();
-            app.Start();
+            app.StartPrimeBreakdown();
         }
     }
 }

@@ -6,6 +6,22 @@ namespace PrimeNumbers
 {
     class PrimeNumbersApp
     {
+
+        public void StartPrimeBreakdown()
+        {
+            PrimeNumbers numbers = new PrimeNumbers();
+            double primesMultiplied = 502560280658509;
+            //502560280658509
+            if (numbers.GetPrimeComponents(primesMultiplied, out int p1, out int p2))
+            {
+                Console.WriteLine($"{primesMultiplied} is made up of prime {p1} and prime {p2}");
+            }
+            else
+            {
+                Console.WriteLine("No prime components found.");
+            }
+        }
+
         public void Start()
         {
             PrimeNumbers numbers = new PrimeNumbers();
