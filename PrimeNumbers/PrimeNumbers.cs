@@ -28,13 +28,9 @@ namespace PrimeNumbers
             int number = primes[^1] + 1; //start at last known prime. plus 1
             bool thisPrime = true; // a number is prime until proven otherwise.
 
-            while(true)
+            while(primes.Count != n)
             {
                 thisPrime = true;
-                if(primes.Count == n)
-                {
-                    break;
-                }
 
                 foreach(int prime in primes)
                 {
